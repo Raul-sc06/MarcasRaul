@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación con Transiciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            color: #ff5722;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#about">Acerca de</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+    </div>
+</body>
+</html>
