@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Examen</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .contenido {
+            display: grid;
+            grid-template-areas: "header header" "nav article" "eventos article" "footer footer";
+            grid-gap: 10px;
+            padding: 20px;
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background-color: gray;
+        }
+        nav {
+            grid-area: nav;
+            background-color: gray;
+        }
+        .eventos {
+            grid-area: eventos;
+            background-color: gray;
+        }
+        article {
+            grid-area: article;
+            background-color: gray;
+        }
+        footer {
+            grid-area: footer;
+            background-color: gray;
+        }
+        @media (max-width: 480px) {
+            .contenido{
+                grid-template-areas: "header" "nav" "article" "eventos" "footer";
+                background-color: gray;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenido">
+    <header>CABECERA</header>
+    <article>ARTICULO</article>
+    <nav>NAV</nav>
+    <div class="eventos">EVENTOS</div>
+    <footer>PIE</footer>
+    </div>
+</body>
+</html>
