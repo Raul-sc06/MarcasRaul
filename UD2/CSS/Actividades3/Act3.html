@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores al pasar el ratón</title>
+    <style>
+        body {
+            color: blue;
+        }
+        .cuadro {
+            width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid;
+            transition: background-color 0.3s ease;
+        }
+
+        .azul {
+            border-color: blue;
+        }
+
+        .verde {
+            border-color: green;
+        }
+
+        .naranja {
+            border-block-start-color: rgb(1, 1, 93);
+            border-block-end-color: orange;
+            border-left-color: grey ;
+            border-right-color: green;
+        }
+
+        .amarillo {
+            border-color: yellow;
+            border-style: dotted;
+        }
+
+        .cuadro:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadro azul">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus commodo venenatis.</div>
+    <div class="cuadro verde">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus commodo venenatis.</div>
+    <div class="cuadro naranja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus commodo venenatis.</div>
+    <div class="cuadro amarillo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus commodo venenatis.</div>
+</body>
+</html>

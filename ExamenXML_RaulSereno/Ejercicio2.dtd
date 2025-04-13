@@ -1,0 +1,22 @@
+<!ELEMENT protectora (nombre, direccion, ubicacion, responsable, animales)>
+<!ATTLIST protectora id ID #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT ubicacion (#PCDATA)>
+
+<!ELEMENT responsable (nombre, contacto)>
+<!ATTLIST resposable id ID #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT contacto (#PCDATA)>
+
+<!ELEMENT animales (animal+)>
+
+<!ELEMENT animal (nombre, especie, estado, foto?)>
+<!ATTLIST animal id ID #REQUIRED edad CDATA #REQUIRED especie (Perro | Gato) #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT especie (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Prueba</title>
+    <style>
+        div {
+            color: red;
+            background-color: gold;
+            font-size: 4vw;
+            padding: 2vw;
+            margin: 2vw;
+            border: solid;
+        }
+
+        .contrast {
+            filter: contrast(100%);
+        }
+
+        .brightness {
+            filter: brightness(50%);
+        }
+
+        .inverted {
+            filter: invert(100%);
+        }
+
+        .rotated {
+            filter: hue-rotate(200deg);
+        }
+
+        .grayscale {
+            filter: grayscale();
+        }
+    </style>
+</head>
+<body>
+    <div>Texto normal</div>
+    <div class="contrast">Texto con contraste</div>
+    <div class="brightness">Texto con brillo</div>
+    <div class="inverted">Texto invertido</div>
+    <div class="rotated">Texto con rotación de tono</div>
+    <div class="grayscale">Texto en escala de grises</div>
+</body>
+</html>
