@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<reinados xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="reinados.xsd">
+    <reinado>
+        <pais>Gran Bretaña</pais>
+        <capital>Londres</capital>
+        <rey>Carlos III</rey>
+        <reina>Camila</reina>
+    </reinado>
+
+    <reinado>
+        <pais>España</pais>
+        <capital>Madrid</capital>
+        <rey>Felipe IV</rey>
+        <reina>Letizia</reina>
+    </reinado>
+</reinados>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE logs [
+    <!ELEMENT logs (log)>
+    <!ELEMENT log (fecha,descripcion,archivo)>
+    <!ELEMENT fecha (#PCDATA)*>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT archivo (#PCDATA)>
+]>
+<logs>
+<log>
+<fecha>2022-01-01</fecha>
+<descripcion>Este es un log de prueba</descripcion>
+<archivo>log_prueba.txt</archivo>
+</log>
+</logs>
