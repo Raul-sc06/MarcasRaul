@@ -16,15 +16,15 @@
     <h2>2.</h2>
     <form>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" value="Jose" readonly> <small>(Tamaño de 40 caracteres)</small>
-        <button type="submit">Enviar</button>
+        <input type="text" id="nombre" name="nombre" value="Jose" readonly> 
+        <button  type="submit">Enviar</button>
     </form>
 
     <h2>3.</h2>
     <form>
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" value="Jose" disabled>
-        <button type="submit">Enviar</button> <small>(Este campo está desactivado)</small>
+        <button type="submit" title="Este campo está desactivado" disabled>Enviar</button> 
     </form>
 
     <h2>4.</h2>
@@ -45,19 +45,13 @@
         <option value="Fiat">Fiat</option>
         <option value="Audi">Audi</option>
     </select>
-    <button onclick="mostrarMarca()">Enviar</button>
-    <p id="salida"></p>
+    <button type="submit">Enviar</button>
+   
 
-    <script>
-        function mostrarMarca() {
-            var marcaSeleccionada = document.getElementById("marca").value;
-            document.getElementById("salida").innerHTML = "La marca seleccionada es: " + marcaSeleccionada;
-        }
-    </script>
     <h1>6.</h1>
     <form id="formulario-marcas">
         <label for="marca">Marca:</label><br>
-        <input type="text" id="marca" name="marca"><br><br>
+        <textarea name="marca" id="marca"></textarea><br><br>
         <input type="submit" value="Enviar">
     </form>
     <h2>7.</h2>
